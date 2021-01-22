@@ -1,0 +1,313 @@
+Delivered-To: _______________________
+Received: by 2002:ac8:528d:0:0:0:0:0 with SMTP id s13csp337692qtn;
+        Thu, 14 Jan 2021 09:39:43 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJzfynCM3mrpBRbaprFXMMLvlYuGWaHk1fIlVTG/tzdTLn69fA9xxNPCB+1x4S+qipAipyEW
+X-Received: by 2002:a5d:56c3:: with SMTP id m3mr9104611wrw.419.1610645983014;
+        Thu, 14 Jan 2021 09:39:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1610645983; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IryVED0P1MCi+3jeFeJGA9qy917ux39pRRyCEZAtmqflKqckJrgxQE150DaCrYpuxQ
+         AgiwxSdmIJG9M5g8FN09/PXZypxw9IHXbY0qdr3Qe4PNkjCMQR3xn4taw758hCTQFTkP
+         DUh4Hnr19IfL6we/HlaQ4kb7Ijh3Yp7wQ7M1iBDnTBdJ+rk3vDCodpMrDnjJcPO3sL0R
+         CGypgiSuZI2neXZFqeIsGN3GBZ+KFe7BCCrbH/MZlFQQIldWGl0Npz3f8exuGy//VJJS
+         osLsgTK1/QnGGsgdtwGbOw43M26HTQzNe+93/DoLqUciCQIzsF1pxunOceax0NQDFQvN
+         HYVQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:date:subject:from:to:dkim-signature;
+        bh=DhRbPeedAZy2efeSIjqdGjLVuQEwy/EmpcDpltnliqM=;
+        b=hFWUo1MdkzrQDznJJMqi0na3S1gc5WGBYKcew7BlBcJXs8TVn5E24d5OgCFfFfHvcG
+         Hlzdig7smVWs9KeWRGCRELdXnoEGY2sl8b0pYi2JcHWkpBGTMPqHRBiWNVKrDdZnvgIe
+         6ptVeNIOlKEcQDiAAWm4F0Su9U/WKxfAI+5FGRTcGGbwMUzVbgj5ACpyMo5LYRlLSM6a
+         9yAYb1oKCuA1wJO7cJTDXiwuICWBSItIvgcvbi6MkC6glS5TLnvsXkVOjTQ3EUqrTKCU
+         3XuBz1nhx4ofChVOHAJjQMdLT17EWveVn0lMoxWBqxks6TNp9KNDJ/bSLl04UEExjjLW
+         4bgw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kormany.hu header.s=mail header.b=w5oXu2Us;
+       spf=pass (google.com: domain of info@kormany.hu designates 195.228.137.201 as permitted sender) smtp.mailfrom=info@kormany.hu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kormany.hu
+Return-Path: <info@kormany.hu>
+Received: from kormany.hu (smtp02.kormany.hu. [195.228.137.201])
+        by mx.google.com with ESMTPS id r13si5841472wrj.166.2021.01.14.09.39.42
+        for <_______________________>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 14 Jan 2021 09:39:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of info@kormany.hu designates 195.228.137.201 as permitted sender) client-ip=195.228.137.201;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kormany.hu header.s=mail header.b=w5oXu2Us;
+       spf=pass (google.com: domain of info@kormany.hu designates 195.228.137.201 as permitted sender) smtp.mailfrom=info@kormany.hu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kormany.hu
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=kormany.hu;
+	 s=mail; h=Content-Type:MIME-Version:Message-ID:Date:Subject:From:To:Sender:
+	Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=DhRbPeedAZy2efeSIjqdGjLVuQEwy/EmpcDpltnliqM=; b=w5oXu2UsmWpyBK4vIkFpvNv6uP
+	2e/OlI0/Uay1792HN45boj8M2duyJ3HRSQvRVjizst2Jo2VzDaLEE+NUqndvsa2batssx2HJ6nW3g
+	3XiDDMPGZKAHYPbEcI0SHGx/TXx+sB+IOq/2XFCbi/uFjElIPt7fSBJPyR3w90R0mzYs=;
+To: _______________________
+From: =?utf-8?Q?Korm=C3=A1nyzati=20?==?utf-8?Q?T=C3=A1j=C3=A9koztat=C3=A1si=20?==?utf-8?Q?K=C3=B6zpont?= <info@kormany.hu>
+Subject: =?utf-8?Q?T=C3=A1j=C3=A9koztat=C3=A1s=20?=a COVID-19 elleni =?utf-8?Q?olt=C3=A1sokkal=20?=kapcsolatban
+Date: Thu, 14 Jan 2021 18:36:06 +0100
+Message-ID: <20210114_173606_012591.info@kormany.hu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="Message-Boundary-by-Mail-Sender-1610645766"
+
+This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--Message-Boundary-by-Mail-Sender-1610645766
+Content-Type: multipart/alternative; boundary="Part-Message-Boundary-by-Mail-Sender-1610645766_2"
+
+
+--Part-Message-Boundary-by-Mail-Sender-1610645766_2
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: Quoted-printable
+
+
+
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+
+
+
+=20=20
+
+=20=20
+=20=20=20=20
+=20=20=20=20=20=20
+
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                Tisztelt H=C3=B6lgyem/Uram! December 26-=C3=A1n beadt=C3=A1=
+k az els=C5=91 koronav=C3=ADrus elleni vakcin=C3=A1t Magyarorsz=C3=A1gon. A=
+z=C3=B3ta folyamatosan zajlik a v=C3=A9d=C5=91olt=C3=A1sok bead=C3=A1sa az =
+olt=C3=A1si terv alapj=C3=A1n. El=C5=91sz=C3=B6r az eg=C3=A9szs=C3=A9g=C3=
+=BCgyi dolgoz=C3=B3k kaphatj=C3=A1k meg a vakcin=C3=A1t a k=C3=B3rh=C3=A1zi=
+ olt=C3=B3pontokon, k=C3=B6z=C3=BCl=C3=BCk t=C3=B6bb t=C3=ADzezren m=C3=A1r=
+ =C3=A9ltek is a lehet=C5=91s=C3=A9ggel. Az elm=C3=BAlt napokban a fert=C5=
+=91z=C3=A9snek k=C3=BCl=C3=B6n=C3=B6sen kitett id=C5=91sotthonokban is megk=
+ezd=C5=91dtek az olt=C3=A1sok. A c=C3=A9l az, hogy az itt =C3=A9l=C5=91k =
+=C3=A9s dolgoz=C3=B3k miel=C5=91bb megkapj=C3=A1k a v=C3=A9detts=C3=A9get. =
+Ez =C3=B6nmag=C3=A1ban t=C3=B6bb mint ezer int=C3=A9zm=C3=A9nyt jelent. Mag=
+yarorsz=C3=A1g eddig k=C3=B6zel 20 milli=C3=B3 adag vakcin=C3=A1t k=C3=B6t=
+=C3=B6tt le k=C3=BCl=C3=B6nb=C3=B6z=C5=91 nemzetk=C3=B6zi gy=C3=A1rt=C3=B3k=
+n=C3=A1l. A k=C3=B6z=C3=B6s uni=C3=B3s beszerz=C3=A9st a br=C3=BCsszeli hat=
+=C3=B3s=C3=A1gok v=C3=A9gzik, de a korm=C3=A1ny t=C3=B6bb gy=C3=A1rt=C3=B3v=
+al is intenz=C3=ADv t=C3=A1rgyal=C3=A1sokat folytat annak =C3=A9rdek=C3=A9b=
+en, hogy t=C3=B6bbf=C3=A9le olt=C3=B3anyag =C3=A1lljon rendelkez=C3=A9sre. =
+Jelenleg k=C3=A9t gy=C3=A1rt=C3=B3 (Pfizer, Moderna) vakcin=C3=A1ja rendelk=
+ezik hat=C3=B3s=C3=A1gi enged=C3=A9llyel =C3=A9s kezdte meg a vakcin=C3=A1k=
+ sz=C3=A1ll=C3=ADt=C3=A1s=C3=A1t az eur=C3=B3pai orsz=C3=A1gokba, k=C3=B6zt=
+=C3=BCk haz=C3=A1nkba. Mindk=C3=A9t vakcinat=C3=ADpus eset=C3=A9ben k=C3=A9=
+t olt=C3=A1s sz=C3=BCks=C3=A9ges a v=C3=A9detts=C3=A9ghez. M=C3=A1r t=C3=B6=
+bb mint egymilli=C3=B3 magyar =C3=A1llampolg=C3=A1r regisztr=C3=A1lt a koro=
+nav=C3=ADrus elleni olt=C3=A1sra, ez azt mutatja, hogy sokan szeretn=C3=A9n=
+ek =C3=A9lni a lehet=C5=91s=C3=A9ggel. A vakcina a leghat=C3=A9konyabb eszk=
+=C3=B6z a kez=C3=BCnkben a koronav=C3=ADrus ellen. Ez=C3=A9rt arra k=C3=A9r=
+j=C3=BCk, biztassa regisztr=C3=A1ci=C3=B3ra csal=C3=A1dtagjait =C3=A9s isme=
+r=C5=91seit is! Az olt=C3=A1ssal kapcsolatos minden tov=C3=A1bbi tudnival=
+=C3=B3r=C3=B3l =C3=A9rtes=C3=ADteni fogjuk. Vigy=C3=A1zzunk egym=C3=A1sra! =
+=C3=9Cdv=C3=B6zlettel: Koronav=C3=ADrus T=C3=A1j=C3=A9koztat=C3=A1si K=C3=
+=B6zpont Adatkezel=C3=A9si t=C3=A1j=C3=A9koztat=C3=B3 =C3=A9s leiratkoz=C3=
+=A1s a h=C3=ADrlev=C3=A9lr=C5=91l
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20
+
+=20=20=20=20=20=20
+=20=20=20=20
+=20=20
+
+
+=20=20
+
+--Part-Message-Boundary-by-Mail-Sender-1610645766_2
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: Quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" =
+http-equiv=3D"Content-Type">
+  <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+  <meta name=3D"format-detection" content=3D"telephone=3Dno">
+  <title>TITLE</title>
+=20=20
+  <style type=3D"text/css" data-inline=3D"true">
+    body{ Margin: 0; padding: 0; }
+    img{ border: 0px; }
+
+    .socialLinks{ font-size: 6px; }
+    .socialLinks a{
+      display: inline-block;
+    }
+    .socialIcon{
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 0px;
+      border-radius: 100%;
+    }
+    .oldwebkit{ }
+    td.vb-outer{=20
+      /* padding-left: 9px;=20
+      padding-right: 9px;  */
+      }
+    table.vb-container, table.vb-row, table.vb-content{
+      border-collapse: separate;
+    }
+    table.vb-row{
+      border-spacing: 9px;
+    }
+    table.vb-row.halfpad{
+      border-spacing: 0;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+    table.vb-row.fullwidth{
+      border-spacing: 0;
+      padding: 0;
+    }
+    table.vb-container{
+      /* padding-left: 18px;
+      padding-right: 18px; */
+    }
+    table.vb-container.fullpad{
+      border-spacing: 18px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    table.vb-container.halfpad{
+      border-spacing: 9px;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+    table.vb-container.fullwidth{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  </style>
+  <style type=3D"text/css">
+    /* yahoo, hotmail */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass f=
+ont, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+    .yshortcuts a{ border-bottom: none !important; }
+    .vb-outer{ min-width: 0 !important; }
+    .RMsgBdy, .ExternalClass{
+      width: 100%;
+      background-color: #ffffff;
+      background-color: #ffffff}
+
+    /* outlook */
+    table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+    #outlook a{ padding: 0; }
+    img{ outline: none; text-decoration: none; border: none; -ms-interpolat=
+ion-mode: bicubic; }
+    a img{ border: none; }
+
+    @media screen and (max-device-width: 600px), screen and (max-width: 600=
+px) {
+      table.vb-container, table.vb-row{
+        width: 95% !important;
+      }
+
+      .mobile-hide{ display: none !important; }
+      .mobile-textcenter{ text-align: center !important; }
+
+      .mobile-full{
+        float: none !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+      img.mobile-full{
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+      }=20=20=20
+    }
+  </style>
+  <style type=3D"text/css" data-inline=3D"true">
+    </style>
+</head>
+<body bgcolor=3D"#ffffff" text=3D"#919191" alink=3D"#cccccc" vlink=3D"#cccc=
+cc" style=3D"background-color: #ffffff; color: #919191;">
+
+  <center>
+
+  <table class=3D"vb-outer" width=3D"100%" cellpadding=3D"0" border=3D"0" c=
+ellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" i=
+d=3D"ko_pharagraphBlock_3">
+    <tbody><tr>
+      <td class=3D"vb-outer" align=3D"center" valign=3D"top">
+<!--[if (gte mso 9)|(lte ie 8)]><table align=3D"center" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"100%"><tr><td align=3D"center" valig=
+n=3D"top"><![endif]-->
+        <div class=3D"oldwebkit">
+          <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"vb-container fullpad" style=3D"width: 100%;">
+              <tbody><tr>
+                <td align=3D"left" class=3D"long-text links-color" style=3D=
+"text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-ser=
+if; color: #3f3f3f;"><p>Tisztelt H=C3=B6lgyem/Uram!</p><p>December 26-=C3=
+=A1n beadt=C3=A1k az els=C5=91 koronav=C3=ADrus elleni vakcin=C3=A1t Magyar=
+orsz=C3=A1gon. Az=C3=B3ta folyamatosan zajlik a v=C3=A9d=C5=91olt=C3=A1sok =
+bead=C3=A1sa az olt=C3=A1si terv alapj=C3=A1n. El=C5=91sz=C3=B6r az eg=C3=
+=A9szs=C3=A9g=C3=BCgyi dolgoz=C3=B3k kaphatj=C3=A1k meg a vakcin=C3=A1t a k=
+=C3=B3rh=C3=A1zi olt=C3=B3pontokon, k=C3=B6z=C3=BCl=C3=BCk t=C3=B6bb t=C3=
+=ADzezren m=C3=A1r =C3=A9ltek is a lehet=C5=91s=C3=A9ggel. Az elm=C3=BAlt n=
+apokban a fert=C5=91z=C3=A9snek k=C3=BCl=C3=B6n=C3=B6sen kitett id=C5=91sot=
+thonokban is megkezd=C5=91dtek az olt=C3=A1sok. A c=C3=A9l az, hogy az itt =
+=C3=A9l=C5=91k =C3=A9s dolgoz=C3=B3k miel=C5=91bb megkapj=C3=A1k a v=C3=A9d=
+etts=C3=A9get. Ez =C3=B6nmag=C3=A1ban t=C3=B6bb mint ezer int=C3=A9zm=C3=A9=
+nyt jelent.</p><p>Magyarorsz=C3=A1g eddig k=C3=B6zel 20 milli=C3=B3 adag va=
+kcin=C3=A1t k=C3=B6t=C3=B6tt le k=C3=BCl=C3=B6nb=C3=B6z=C5=91 nemzetk=C3=B6=
+zi gy=C3=A1rt=C3=B3kn=C3=A1l. A k=C3=B6z=C3=B6s uni=C3=B3s beszerz=C3=A9st =
+a br=C3=BCsszeli hat=C3=B3s=C3=A1gok v=C3=A9gzik, de a korm=C3=A1ny t=C3=B6=
+bb gy=C3=A1rt=C3=B3val is intenz=C3=ADv t=C3=A1rgyal=C3=A1sokat folytat ann=
+ak =C3=A9rdek=C3=A9ben, hogy t=C3=B6bbf=C3=A9le olt=C3=B3anyag =C3=A1lljon =
+rendelkez=C3=A9sre. Jelenleg k=C3=A9t gy=C3=A1rt=C3=B3 (Pfizer, Moderna) va=
+kcin=C3=A1ja rendelkezik hat=C3=B3s=C3=A1gi enged=C3=A9llyel =C3=A9s kezdte=
+ meg a vakcin=C3=A1k sz=C3=A1ll=C3=ADt=C3=A1s=C3=A1t az eur=C3=B3pai orsz=
+=C3=A1gokba, k=C3=B6zt=C3=BCk haz=C3=A1nkba. Mindk=C3=A9t vakcinat=C3=ADpus=
+ eset=C3=A9ben k=C3=A9t olt=C3=A1s sz=C3=BCks=C3=A9ges a v=C3=A9detts=C3=A9=
+ghez.</p><p>M=C3=A1r t=C3=B6bb mint egymilli=C3=B3 magyar =C3=A1llampolg=C3=
+=A1r regisztr=C3=A1lt a koronav=C3=ADrus elleni olt=C3=A1sra, ez azt mutatj=
+a, hogy sokan szeretn=C3=A9nek =C3=A9lni a lehet=C5=91s=C3=A9ggel. A vakcin=
+a a leghat=C3=A9konyabb eszk=C3=B6z a kez=C3=BCnkben a koronav=C3=ADrus ell=
+en. Ez=C3=A9rt arra k=C3=A9rj=C3=BCk, biztassa regisztr=C3=A1ci=C3=B3ra csa=
+l=C3=A1dtagjait =C3=A9s ismer=C5=91seit is! Az olt=C3=A1ssal kapcsolatos mi=
+nden tov=C3=A1bbi tudnival=C3=B3r=C3=B3l =C3=A9rtes=C3=ADteni fogjuk.</p><p=
+>Vigy=C3=A1zzunk egym=C3=A1sra!</p><p>=C3=9Cdv=C3=B6zlettel:<br>Koronav=C3=
+=ADrus T=C3=A1j=C3=A9koztat=C3=A1si K=C3=B6zpont</p><h6><br><a href=3D"http=
+s://kormany.hu/adatkezelesi-tajekoztato?___________________________________=
+___________________________________">Adatkezel=C3=A9si t=C3=A1j=C3=A9koztat=
+=C3=B3 =C3=A9s leiratkoz=C3=A1s a h=C3=ADrlev=C3=A9lr=C5=91l</a><br></h6></=
+td>
+              </tr>
+          </tbody></table>
+        </div>
+<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </tbody></table>
+
+
+  </center>
+
+</body></html>=
+=
+--Part-Message-Boundary-by-Mail-Sender-1610645766_2--
+
+--Message-Boundary-by-Mail-Sender-1610645766--
+

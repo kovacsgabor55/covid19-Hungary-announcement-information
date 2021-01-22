@@ -1,0 +1,297 @@
+Delivered-To: _______________________
+Received: by 2002:a05:622a:4c9:0:0:0:0 with SMTP id q9csp1556072qtx;
+        Fri, 22 Jan 2021 09:51:43 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxpAYRxKhIb8M01NKfIMh7L4ZqYEpOzA55Te+/H/ugW5fLpzRaTMoDIHYDzIivxIicrDKja
+X-Received: by 2002:a05:6402:50c6:: with SMTP id h6mr4073035edb.117.1611337903225;
+        Fri, 22 Jan 2021 09:51:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1611337903; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bPABrnJvApOlDjS2fLgDn9Cm6zz5+ru5fcgYew+dn5z9G4HaLoiXUVBpBgW8ONqIdM
+         AhBwNFQWDbsa51zJXlWbs9SwczoU4CfDAcmC9SLVWzmd/1956covdqFjhOiWmEMYFvqn
+         CLxiyOJYleLKkxFv1e4P6gwY2n3HTPoJlOx9kbXvARJTHLZi38iVO1aA66J7WQtq2Ovd
+         xxrj2zEw8t+1PKR1uH5qaR7dQfM02xwPD3vs4Qw9DwdDFFHhTDwAMnlwM94stwy/+sUb
+         LGku1yD3BMjfwfkB0Zcy2ZyL2wfmX9LyKLTraOg6MU+R1M9RHN7YcWI1lotmbC45+erw
+         NisQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:date:subject:from:to:dkim-signature;
+        bh=Hebp73XgaWTuOZv5buUGHrSZTe6uJZgSUS4PMpAkt7o=;
+        b=m+NtwXsdQtYzLd7dFW/R5UPRGyv67YsR30RiPsgOITs/jIuRwmZhf6Q8KKMI/CWEW8
+         nGc4YlNDBU2R4RFK21VKZJx/aXTPYv+jit+GwD2hSh80kY9iL+yhSrDkm4M91iHk6Jrc
+         Vai4D0DwnuocDcZYNtsGDYwQoC2bFscjrKbUdW9lr3wuzfKs3/HmvXGWSx8Isfz6/Ik6
+         HfxA0WPAMi/quD86lTw/0+sboKruEwipG3rViMpMGozK/8UUi8QnTaqUsXbWkKTEruVM
+         2Bj9vr2TPrdwxJsov1SdBwLsNDTVPYteFGuHnTVMt7h6qHAmhyViNOTBGrR1sBZDOps7
+         M/+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kormany.hu header.s=mail header.b=ic7NvSlk;
+       spf=pass (google.com: domain of info@kormany.hu designates 195.228.137.200 as permitted sender) smtp.mailfrom=info@kormany.hu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kormany.hu
+Return-Path: <info@kormany.hu>
+Received: from kormany.hu (smtp01.kormany.hu. [195.228.137.200])
+        by mx.google.com with ESMTPS id dm28si3660878edb.528.2021.01.22.09.51.43
+        for <_______________________>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 22 Jan 2021 09:51:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of info@kormany.hu designates 195.228.137.200 as permitted sender) client-ip=195.228.137.200;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kormany.hu header.s=mail header.b=ic7NvSlk;
+       spf=pass (google.com: domain of info@kormany.hu designates 195.228.137.200 as permitted sender) smtp.mailfrom=info@kormany.hu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=kormany.hu
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=kormany.hu;
+	 s=mail; h=Content-Type:MIME-Version:Message-ID:Date:Subject:From:To:Sender:
+	Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=Hebp73XgaWTuOZv5buUGHrSZTe6uJZgSUS4PMpAkt7o=; b=ic7NvSlkkJAjactq9G9K8lCX7B
+	TMz1eVNdkTXsYgRh6TNgCdmXf0Lmek+787DJpU1HIOVoU6jZRpZiW/0itztxjtLF59s55Jm1tOl5r
+	LhhdYIZ6SaFmWXq34/SD01ybuGwMOfU1gkYVxRpra2H93I01yLwPg4RLZiSt2wL4qU+A=;
+To: _______________________
+From: =?utf-8?Q?Korm=C3=A1nyzati=20?==?utf-8?Q?T=C3=A1j=C3=A9koztat=C3=A1si=20?==?utf-8?Q?K=C3=B6zpont?= <info@kormany.hu>
+Subject: =?utf-8?Q?T=C3=A1j=C3=A9koztat=C3=A1s=20?=a COVID-19 elleni =?utf-8?Q?vakcin=C3=A1kkal=20?=kapcsolatban
+Date: Fri, 22 Jan 2021 18:48:04 +0100
+Message-ID: <20210122_174804_034778.info@kormany.hu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="Message-Boundary-by-Mail-Sender-1611337684"
+
+This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--Message-Boundary-by-Mail-Sender-1611337684
+Content-Type: multipart/alternative; boundary="Part-Message-Boundary-by-Mail-Sender-1611337684_2"
+
+
+--Part-Message-Boundary-by-Mail-Sender-1611337684_2
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: Quoted-printable
+
+
+
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+=20=20
+
+
+
+=20=20
+
+=20=20
+=20=20=20=20
+=20=20=20=20=20=20
+
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                Tisztelt H=C3=B6lgyem/Uram! A korm=C3=A1ny =C3=BAgy d=C3=B6=
+nt=C3=B6tt, hogy a br=C3=BCsszeli vakcinabeszerz=C3=A9sen k=C3=ADv=C3=BCl m=
+=C3=A1s (orosz =C3=A9s k=C3=ADnai) vakcin=C3=A1k v=C3=A1s=C3=A1rl=C3=A1s=C3=
+=A1r=C3=B3l is t=C3=A1rgyal. Ennek az az oka, hogy a Br=C3=BCsszel =C3=A1lt=
+al megrendelt olt=C3=B3anyagok az eddigi tapasztalatok alapj=C3=A1n j=C3=B3=
+val lassabban =C3=A9rkeznek a sz=C3=BCks=C3=A9gesn=C3=A9l. A sz=C3=A1ll=C3=
+=ADtm=C3=A1nyok akadoz=C3=A1sa t=C3=B6bb eur=C3=B3pai orsz=C3=A1gban is til=
+takoz=C3=A1st v=C3=A1ltott ki. A magyar gy=C3=B3gyszer=C3=A9szeti hat=C3=B3=
+s=C3=A1g ek=C3=B6zben k=C3=A9t =C3=BAjabb vakcin=C3=A1ra (az oxfordi AstraZ=
+eneca, valamint az orosz Szputnyik olt=C3=B3anyagra) adott enged=C3=A9lyt. =
+Term=C3=A9szetesen a legfontosabb alapelv a magyar emberek eg=C3=A9szs=C3=
+=A9ge. Az orvosok csak olyan vakcin=C3=A1val olthatnak, amelyet a magyar eg=
+=C3=A9szs=C3=A9g=C3=BCgyi hat=C3=B3s=C3=A1gok biztons=C3=A1gosnak =C3=A9s h=
+at=C3=A9konynak tal=C3=A1lnak, =C3=A9s enged=C3=A9lyeznek. A be=C3=A9rkezet=
+t =C3=A9s enged=C3=A9lyezett vakcin=C3=A1kkal hetek =C3=B3ta folyamatosan z=
+ajlik az olt=C3=A1si program Magyarorsz=C3=A1gon. El=C5=91sz=C3=B6r az eg=
+=C3=A9szs=C3=A9g=C3=BCgyi dolgoz=C3=B3k =C3=A9s az id=C5=91sotthonokban =C3=
+=A9l=C5=91k kaphatnak olt=C3=A1st. Ut=C3=A1nuk id=C5=91sebb honfit=C3=A1rsa=
+ink, k=C3=B6z=C3=BCl=C3=BCk is els=C5=91 k=C3=B6rben a 89 =C3=A9v felettiek=
+ kaphatj=C3=A1k meg a v=C3=A9d=C5=91olt=C3=A1st. Az olt=C3=A1ssal kapcsolat=
+os tov=C3=A1bbi fejlem=C3=A9nyekr=C5=91l =C3=A9rtes=C3=ADteni fogjuk. Vigy=
+=C3=A1zzunk egym=C3=A1sra! =C3=9Cdv=C3=B6zlettel: Koronav=C3=ADrus T=C3=A1j=
+=C3=A9koztat=C3=B3 K=C3=B6zpont Adatkezel=C3=A9si t=C3=A1j=C3=A9koztat=C3=
+=B3 =C3=A9s leiratkoz=C3=A1s a h=C3=ADrlev=C3=A9lr=C5=91l
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20
+
+=20=20=20=20=20=20
+=20=20=20=20
+=20=20
+
+
+=20=20
+
+--Part-Message-Boundary-by-Mail-Sender-1611337684_2
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: Quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" =
+http-equiv=3D"Content-Type">
+  <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+  <meta name=3D"format-detection" content=3D"telephone=3Dno">
+  <title>TITLE</title>
+=20=20
+  <style type=3D"text/css" data-inline=3D"true">
+    body{ Margin: 0; padding: 0; }
+    img{ border: 0px; }
+
+    .socialLinks{ font-size: 6px; }
+    .socialLinks a{
+      display: inline-block;
+    }
+    .socialIcon{
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 0px;
+      border-radius: 100%;
+    }
+    .oldwebkit{ }
+    td.vb-outer{=20
+      /* padding-left: 9px;=20
+      padding-right: 9px;  */
+      }
+    table.vb-container, table.vb-row, table.vb-content{
+      border-collapse: separate;
+    }
+    table.vb-row{
+      border-spacing: 9px;
+    }
+    table.vb-row.halfpad{
+      border-spacing: 0;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+    table.vb-row.fullwidth{
+      border-spacing: 0;
+      padding: 0;
+    }
+    table.vb-container{
+      /* padding-left: 18px;
+      padding-right: 18px; */
+    }
+    table.vb-container.fullpad{
+      border-spacing: 18px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    table.vb-container.halfpad{
+      border-spacing: 9px;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+    table.vb-container.fullwidth{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  </style>
+  <style type=3D"text/css">
+    /* yahoo, hotmail */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass f=
+ont, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+    .yshortcuts a{ border-bottom: none !important; }
+    .vb-outer{ min-width: 0 !important; }
+    .RMsgBdy, .ExternalClass{
+      width: 100%;
+      background-color: #ffffff;
+      background-color: #ffffff}
+
+    /* outlook */
+    table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+    #outlook a{ padding: 0; }
+    img{ outline: none; text-decoration: none; border: none; -ms-interpolat=
+ion-mode: bicubic; }
+    a img{ border: none; }
+
+    @media screen and (max-device-width: 600px), screen and (max-width: 600=
+px) {
+      table.vb-container, table.vb-row{
+        width: 95% !important;
+      }
+
+      .mobile-hide{ display: none !important; }
+      .mobile-textcenter{ text-align: center !important; }
+
+      .mobile-full{
+        float: none !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+      img.mobile-full{
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+      }=20=20=20
+    }
+  </style>
+  <style type=3D"text/css" data-inline=3D"true">
+    </style>
+</head>
+<body bgcolor=3D"#ffffff" text=3D"#919191" alink=3D"#cccccc" vlink=3D"#cccc=
+cc" style=3D"background-color: #ffffff; color: #919191;">
+
+  <center>
+
+  <table class=3D"vb-outer" width=3D"100%" cellpadding=3D"0" border=3D"0" c=
+ellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" i=
+d=3D"ko_pharagraphBlock_3">
+    <tbody><tr>
+      <td class=3D"vb-outer" align=3D"center" valign=3D"top">
+<!--[if (gte mso 9)|(lte ie 8)]><table align=3D"center" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"100%"><tr><td align=3D"center" valig=
+n=3D"top"><![endif]-->
+        <div class=3D"oldwebkit">
+          <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"vb-container fullpad" style=3D"width: 100%;">
+              <tbody><tr>
+                <td align=3D"left" class=3D"long-text links-color" style=3D=
+"text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-ser=
+if; color: #3f3f3f;"><p><strong>Tisztelt H=C3=B6lgyem/Uram!</strong></p><p>=
+A korm=C3=A1ny =C3=BAgy d=C3=B6nt=C3=B6tt, hogy a br=C3=BCsszeli vakcinabes=
+zerz=C3=A9sen k=C3=ADv=C3=BCl m=C3=A1s (orosz =C3=A9s k=C3=ADnai) vakcin=C3=
+=A1k v=C3=A1s=C3=A1rl=C3=A1s=C3=A1r=C3=B3l is t=C3=A1rgyal. Ennek az az oka=
+, hogy a Br=C3=BCsszel =C3=A1ltal megrendelt olt=C3=B3anyagok az eddigi tap=
+asztalatok alapj=C3=A1n j=C3=B3val lassabban =C3=A9rkeznek a sz=C3=BCks=C3=
+=A9gesn=C3=A9l. A sz=C3=A1ll=C3=ADtm=C3=A1nyok akadoz=C3=A1sa t=C3=B6bb eur=
+=C3=B3pai orsz=C3=A1gban is tiltakoz=C3=A1st v=C3=A1ltott ki.</p><p>A magya=
+r gy=C3=B3gyszer=C3=A9szeti hat=C3=B3s=C3=A1g ek=C3=B6zben k=C3=A9t =C3=BAj=
+abb vakcin=C3=A1ra (az oxfordi AstraZeneca, valamint az orosz Szputnyik olt=
+=C3=B3anyagra) adott enged=C3=A9lyt.</p><p>Term=C3=A9szetesen a legfontosab=
+b alapelv a magyar emberek eg=C3=A9szs=C3=A9ge. Az orvosok csak olyan vakci=
+n=C3=A1val olthatnak, amelyet a magyar eg=C3=A9szs=C3=A9g=C3=BCgyi hat=C3=
+=B3s=C3=A1gok biztons=C3=A1gosnak =C3=A9s hat=C3=A9konynak tal=C3=A1lnak, =
+=C3=A9s enged=C3=A9lyeznek.</p><p>A be=C3=A9rkezett =C3=A9s enged=C3=A9lyez=
+ett vakcin=C3=A1kkal hetek =C3=B3ta folyamatosan zajlik az olt=C3=A1si prog=
+ram Magyarorsz=C3=A1gon. El=C5=91sz=C3=B6r az eg=C3=A9szs=C3=A9g=C3=BCgyi d=
+olgoz=C3=B3k =C3=A9s az id=C5=91sotthonokban =C3=A9l=C5=91k kaphatnak olt=
+=C3=A1st. Ut=C3=A1nuk id=C5=91sebb honfit=C3=A1rsaink, k=C3=B6z=C3=BCl=C3=
+=BCk is els=C5=91 k=C3=B6rben a 89 =C3=A9v felettiek kaphatj=C3=A1k meg a v=
+=C3=A9d=C5=91olt=C3=A1st.</p><p>Az olt=C3=A1ssal kapcsolatos tov=C3=A1bbi f=
+ejlem=C3=A9nyekr=C5=91l =C3=A9rtes=C3=ADteni fogjuk.</p><p>Vigy=C3=A1zzunk =
+egym=C3=A1sra!</p><p>=C3=9Cdv=C3=B6zlettel:<br>Koronav=C3=ADrus T=C3=A1j=C3=
+=A9koztat=C3=B3 K=C3=B6zpont</p><h6><br><a href=3D"https://kormany.hu/adatk=
+ezelesi-tajekoztato?_______________________________________________________=
+_______________">Adatkezel=C3=A9si t=C3=A1j=C3=A9koztat=C3=B3 =C3=A9s leira=
+tkoz=C3=A1s a h=C3=ADrlev=C3=A9lr=C5=91l</a><br></h6></td>
+              </tr>
+          </tbody></table>
+        </div>
+<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </tbody></table>
+
+
+  </center>
+
+</body></html>=
+=
+--Part-Message-Boundary-by-Mail-Sender-1611337684_2--
+
+--Message-Boundary-by-Mail-Sender-1611337684--
+
